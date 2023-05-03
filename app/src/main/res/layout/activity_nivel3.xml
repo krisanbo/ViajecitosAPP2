@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activityafrica"
+    tools:context=".Nivel3">
+
+    <TextView
+        android:id="@+id/tv_nivel1"
+        android:layout_width="82dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:text="Nivel3"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_nombre4"
+        android:layout_width="81dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/tv_nombre"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nivel1" />
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="53dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="68dp"
+        android:text="@string/tv_score"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_pregunta"
+        android:layout_width="134dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="32dp"
+        android:text="¿Que bandera es?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nombre4" />
+
+    <ImageView
+        android:id="@+id/iv_banderas"
+        android:layout_width="139dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <RadioGroup
+        android:id="@+id/respuestas"
+        android:layout_width="110dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pregunta">
+
+        <RadioButton
+            android:id="@+id/rb_opcion1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFC107"
+            android:text="@string/rb_opcion1" />
+
+        <RadioButton
+            android:id="@+id/rb_opcion2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFC107"
+            android:text="@string/rb_opcion2" />
+
+        <RadioButton
+            android:id="@+id/rb_opcion3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFC107"
+            android:text="@string/rb_opcion3" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/iv_vidas"
+        android:layout_width="191dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/tv_vidas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/tresvidas" />
+
+    <TextView
+        android:id="@+id/tv_nuestro1"
+        android:layout_width="137dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/tv_nuestro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_vidas"
+        app:layout_constraintVertical_bias="0.948" />
+
+    <TextView
+        android:id="@+id/tv_vidas"
+        android:layout_width="171dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="44dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/respuestas" />
+
+    <Button
+        android:id="@+id/bt_comprobar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="36dp"
+        android:onClick="comprobar"
+        android:text="@string/bt_comprobar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_banderas" />
+
+    <TextView
+        android:id="@+id/tv_invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_vidas"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_nombrevisado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="204dp"
+        android:text="Visados"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

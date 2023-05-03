@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ViajecitosApp</string>
+    <string name="et_nombre">Nombre viajero</string>
+
+    <string name="tv1">Pon tu nombre en el pasaporte y empieza el viaje pulsando el icono</string>
+    <string name="tv_nuestro">Iván Jácome y Cristina Sánchez</string>
+    <string name="tv_record"></string>
+    <string name="iv_vidas"></string>
+    <string name="tv_score"></string>
+    <string name="rb_opcion1">opcion</string>
+    <string name="rb_opcion2">opcion</string>
+    <string name="rb_opcion3">opcion</string>
+    <string name="tv_nombre"></string>
+    <string name="iv_banderas">banderas</string>
+    <string name="bt_comprobar">comprobar</string>
+    <string name="tv_vidas">3</string>
+    <string name="bt_jugar">viajar</string>
+    <string name="tv_final">¡ Felicidades ! Continua tu viaje pinchando aqui --> </string>
+    <string name="wv1">web</string>
+
+</resources>
